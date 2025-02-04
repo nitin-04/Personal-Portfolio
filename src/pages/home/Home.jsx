@@ -1,7 +1,7 @@
-import Profile from "../../assets/profile.png";
+import Profile from "../../assets/Profile.png";
 import Resume from "../../components/Resume";
 import "./home.css"
-
+ 
 const Home = () => {
   return (
     <section className="home section grid">
