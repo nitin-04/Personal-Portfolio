@@ -6,41 +6,38 @@ import PropTypes from 'prop-types';
 
 const ProjectBox = ({ projectPhoto, projectName }) => {
   const desc = {
-    FoodiesPointDesc: "This is an Online Food Delivery platform designed to provide a seamless and efficient way for users to browse menus and place orders.",
-    FoodiesPointGithub: "https://github.com/nishaaant/Foodies-Point",
-    FoodiesPointWebsite: "https://drive.google.com/file/d/131wtBD7KTvrz9UnpGax6TM1iyUl0vJHv/view?usp=sharing",
+    AnnadataDesc: "This is an Online Food Delivery platform designed to provide a seamless and efficient way for users to browse menus and place orders.",
+    AnnadataGithub: "https://github.com/nitin-04/Annadata",
+    AnnadataWebsite: "https://drive.google.com/file/d/1XzUqj_syzqxTD083xRY7mSHtS4kSStd2/view",
 
-    PortfolioDesc: "The goal of this project is to provide a professional and engaging platform to highlight my work and connect with potential collaborators or employers.",
-    PortfolioGithub: "https://github.com/nishaaant/Portfolio-main",
-    PortfolioWebsite: "https://nishaaant.vercel.app/",
+    SnakeGameDesc: "A simple Snake Game where the snake grows by eating food, with gameplay ending upon collision with the walls or itself.",
+    SnakeGameGithub: "https://github.com/nitin-04/snakeGame",
+    SnakeGameWebsite: "https://snake-game-sg.vercel.app/",
 
-    NewsletterDesc: "A newsletter signup site made using Mailchimp API where the signups can be monitored from the MailChimp account. This project was made to understand API integration, environment variables and vercel deployment.",
-    NewsletterGithub: "",
-    NewsletterWebsite: "",
+    BMIDesc: "BMI Calculator: Enter height and weight to calculate BMI and get categorized results: Underweight, Normal, Overweight, or Obese.",
+    BMIGithub: "https://github.com/nitin-04/bmi",
+    BMIWebsite: "https://bmi-dusky-omega.vercel.app",
 
-    DphiDesc: "Engineered a robust system allowing users to create, edit, and delete challenges with ease, ensuring a seamless user experience and efficient challenge management. (CRUD)",
-    DphiGithub: "https://github.com/nishaaant/DPHI",
-    DphiWebsite: "https://dphi-nishants-projects-dfba7292.vercel.app/",
+    BgChangerDesc: "A background changer built with JavaScript featuring Start and Stop buttons. Press Start to change the background color every 2 seconds and Stop to pause the effect.",
+    BgChangerGithub: "https://github.com/nitin-04/Unlimited-background-colors",
+    BgChangerWebsite: "https://unlimited-background-colors.vercel.app/",
 
-    DockssDesc: "A sleek document-saving app powered by Vite for speed and Framer Motion for smooth, animated card interactions. Effortless, organized, and visually stunning!",
-    DockssGithub: "https://github.com/nishaaant/dockss",
-    DockssWebsite: "https://dockss.vercel.app/",
+    ColorSwitchDesc: "A Color Switcher built with JavaScript that changes the background based on the selected color, providing a simple and interactive user experience.",
+    ColorSwitchGithub: "https://github.com/nitin-04/color-switch  ",
+    ColorSwitchWebsite: "https://color-switch-five.vercel.app/",
 
-    YaaraanaDesc: "Built a MERN stack application with features like account creation, profile editing, connection management, and secure login/logout workflows.",
-    YaaraanaGithub: "https://github.com/nishaaant/Yaaraana-Web",
-    YaaraanaWebsite: "https://drive.google.com/file/d/1PFM4-dGjk319dnFngrTnSmXJQ4OmcSKP/view?usp=sharing",
+    TicTacToeDesc: "A dynamic Tic Tac Toe game using JavaScript, featuring a 3x3 grid with real-time win, loss, and draw detection.",
+    TicTacToeGithub: "https://github.com/nitin-04/TicTacToe",
+    TicTacToeWebsite: "https://tic-tac-toe-eight-lovat.vercel.app/",
 
-    SchedulerDesc: "Developed a MERN stack application enabling users to design and execute email marketing sequences through an intuitive flowchart-based interface using React Flow.",
-    SchedulerGithub: "https://github.com/nishaaant/Scheduler-Nish-Web",
-    SchedulerWebsite: "https://drive.google.com/file/d/1RUXw2EkmsLLMs64HYj3eLvNQ6iDt1bs1/view?usp=sharing",
+    RockPaperScissorDesc: "A single-player Rock-Paper-Scissors game where the player competes against the computer. The computer makes random choices, and the game declares the winner based on classic rules.",
+    RockPaperScissorGithub: "https://github.com/nitin-04/RPS",
+    RockPaperScissorWebsite: "https://rps-bice-five.vercel.app/",
 
-    ImageDashboardDesc: "Built a responsive admin dashboard to manage user-submitted names, social handles, and images. Developed with React.js, Tailwind CSS, and MongoDB, featuring dynamic data display and seamless navigation.",
-    ImageDashboardGithub: "https://github.com/nishaaant/user-image-dashboard",
-    ImageDashboardWebsite: "https://nishand-image-dashboard.vercel.app/",
+    // CommingsoonDesc: "",
+    // ComingsoonGithub: "",
+    // ComingsoonWebsite: "",
 
-    TaskManagerDesc: "A full-stack task management app with real-time stats, task creation, editing, and priority tracking. Built with React, TypeScript, Tailwind CSS, and Node.js. 🚀",
-    TaskManagerGithub: "https://github.com/nishaaant/TaskManager-Nish",
-    TaskManagerWebsite: "https://task-manager-nish.vercel.app/",
   }
 
   let show = '';
@@ -53,7 +50,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
       <img className='projectPhoto' src={projectPhoto} alt="Project display" />
       <div>
         <br />
-        <h3>{projectName}</h3>
+        <h3 className="project_name">{projectName}</h3>
         <br />
         {desc[projectName + 'Desc']}
         <br />

@@ -13,7 +13,7 @@ const About = () => {
       id: 1,
       category: 'education',
       icon: <FaGraduationCap />,
-      year: '2016-2018',
+      year: '2023-2025',
       title: 'Master Degree <span> Master Of Computer Applications </span>',
       desc: 'Gautam Buddha University, Greater Noida',
     },
@@ -45,8 +45,8 @@ const About = () => {
   return (
     <main className="section container">
       <section className="about">
-        <h2 className="section__title">
-          About <span>Me</span>
+        <h2 className="title">
+          ABOUT <span>ME</span>
         </h2>
 
         <div className="about__container grid">

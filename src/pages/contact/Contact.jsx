@@ -53,8 +53,8 @@ const Contact = () => {
 
     return (
         <section className="contact section">
-            <h2 className="section__title">
-                Get In <span>Touch</span>
+            <h2 className="title">
+                GET IN <span>TOUCH</span>
             </h2>
 
             <div className="contact__container container grid">
