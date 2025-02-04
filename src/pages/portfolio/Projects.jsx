@@ -9,20 +9,19 @@ import rps from '../../assets/rps.png';
 import snakegame from '../../assets/snakegame.png';
 import ttt from '../../assets/ttt.png';
 
-
+ 
 
 const Projects = () => {
   return (
     <div id='project'>
 
-      <h2 className="title">
+      <h2 className="title__prj">
         MY <span>PROJECTS</span>
       </h2>
 
       <p className='para'>
         {` Here are some of the projects I've worked on. Some of them are still in development, others are completed.
         Click on the project name for more information or to see the live version.
-        Please note that the live version of the projects may not be fully functional yet.
         If you want to contribute to any of these projects, feel free to reach out to me.`}
       </p>
 

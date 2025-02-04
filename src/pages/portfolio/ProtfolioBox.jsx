@@ -30,7 +30,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     TicTacToeGithub: "https://github.com/nitin-04/TicTacToe",
     TicTacToeWebsite: "https://tic-tac-toe-eight-lovat.vercel.app/",
 
-    RockPaperScissorDesc: "A single-player Rock-Paper-Scissors game where the player competes against the computer. The computer makes random choices, and the game declares the winner based on classic rules.",
+    RockPaperScissorDesc: "A single-player Rock-Paper-Scissors game where the player competes against the computer. The computer makes random choices.",
     RockPaperScissorGithub: "https://github.com/nitin-04/RPS",
     RockPaperScissorWebsite: "https://rps-bice-five.vercel.app/",
 

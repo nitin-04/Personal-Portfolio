@@ -1,5 +1,5 @@
 import { CgCPlusPlus } from "react-icons/cg";
-import { FaReact, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaFileExcel,  FaReact, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap } from "react-icons/fa";
 import { DiNodejs, DiJavascript1 } from "react-icons/di";
 import { SiExpress, SiMysql, SiMongodb, SiPostman, SiVercel, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
 import PropTypes from 'prop-types';
@@ -24,6 +24,10 @@ const Skills = ({ skill }) => {
     Tailwind: <SiTailwindcss />,
     MySQL: <SiMysql />,
     Typescript: <SiTypescript />,
+    HTML: <FaHtml5 />,
+    CSS: <FaCss3 />,
+    Excel: <FaFileExcel />,
+
   }
 
   return (

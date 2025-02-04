@@ -53,10 +53,17 @@ const About = () => {
           <div className="about__info">
             <h3 className="section__subtitle"><span>Information About Me</span></h3>
 
-            <p className="about__para">{`Hi, I'm Nitin Bahuguna, a passionate web developer with a focus on creating interactive and
-              responsive websites. With a growing expertise in front-end technologies like HTML, CSS, and
-              JavaScript, I'm constantly learning and evolving to stay at the forefront of modern web design`}
+            <p className="about__para">
+              {`I hold a `}<span>Bachelor</span>{`'s  degree in `}<span> Mathematics</span>{`, where I honed my problem-solving and logical thinking skills. My passion for IT led me to transition into web development and pursue a `}<span> Master</span>{`'s in `}<span> Computer Applications</span>{` , specializing in Data Science, currently in my final year.`}
+              <br /><br />
+             
+              
+              {`In my journey, I’ve gained hands-on experience with technologies like`} <span>ReactJS, JavaScript,</span>{` and various database tools. I enjoy creating original projects with captivating designs that solve real-world problems.`}
+              <br /><br />
+             
+              {`Beyond coding, I find joy in `}<span>Traveling</span> {`, playing `}<span>Chess</span> {`, exploring `}<span>Mountains</span>{`, and engaging in conversations with diverse perspectives.`}
             </p>
+
 
 
             <Resume />
@@ -79,13 +86,16 @@ const About = () => {
           <Skills skill='Express' />
           <Skills skill='MongoDb' />
           <Skills skill='MySQL' />
-          <Skills skill='Typescript' />
+          {/* <Skills skill='Typescript' /> */}
           <Skills skill='Git' />
           <Skills skill='Github' />
           <Skills skill='Javascript' />
           <Skills skill='C++' />
           <Skills skill='Python' />
-          <Skills skill='Figma' />
+          <Skills skill='Excel' />
+          <Skills skill='HTML' />
+          <Skills skill='CSS' />
+          {/* <Skills skill='Figma' /> */}
           <Skills skill='Vercel' />
           <Skills skill='Npm' />
           <Skills skill='Postman' />

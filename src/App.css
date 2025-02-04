@@ -113,7 +113,7 @@ img {
 
 .container{
   /* background-color: var(--first-color); */
-  max-width: 1300px;
+  max-width: 1500px;
   margin-inline: auto;
 
 }
@@ -131,7 +131,7 @@ img {
   font-size: 75px;
   font-weight: var(--weight-800);
   text-align: center;
-  margin: 70px 0;
+  margin: 0 40px 100px 0;
 }
 
 .section__title {
@@ -208,3 +208,5 @@ span{
   background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a transparent background */
   z-index: 1000; /* Ensures it appears above other content */
 }
+
+
