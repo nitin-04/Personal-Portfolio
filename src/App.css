@@ -127,6 +127,13 @@ img {
   padding-block: 70px;
 }
 
+.title {
+  font-size: 75px;
+  font-weight: var(--weight-800);
+  text-align: center;
+  margin: 70px 0;
+}
+
 .section__title {
   font-size: var(--big-font-size);
   font-weight: var(--weight-800);
@@ -187,4 +194,17 @@ span{
   font-size: var(--large-font-size);
   text-align: center;
   line-height: 60px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a transparent background */
+  z-index: 1000; /* Ensures it appears above other content */
 }
