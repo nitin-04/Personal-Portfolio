@@ -128,15 +128,10 @@ img {
 }
 
 .title {
-  font-size: 75px;
+  font-size: 4vw;
   font-weight: var(--weight-800);
   text-align: center;
   margin: 0 2.5% 5% 0;
-}
-
-
-.section__title span{
-  color: var(--first-color);
 }
 
 span{
@@ -147,9 +142,9 @@ span{
 .button {
   display: inline-block;
   color: var(--title-color);
-  border: 1px solid var(--first-color);
-  padding: 15px 70px 15px 35px;
-  border-radius: 35px;
+  border: 0.0625vw solid var(--first-color);
+  padding: 0.9375% 4.375% 0.9375% 2.1875%;
+  border-radius: 2.1875%;   
   font-family: var(--second-font);
   font-size: var(--small-font-size);
   font-weight: var(--weight-500);
@@ -180,15 +175,16 @@ span{
 .button__icon {
   background-color: var(--first-color);
   position: absolute;
-  inset-block: -2px;
+  inset-block: -0.125%; 
   right: 0;
-  width: 55px;
+  width: 3.4375%;
   border-radius: 50%;
   color: var(--text-white);
   font-size: var(--large-font-size);
   text-align: center;
-  line-height: 60px;
+  line-height: 3.75%; 
 }
+
 
 .loader-container {
   display: flex;
