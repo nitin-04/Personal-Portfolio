@@ -30,11 +30,6 @@
     text-overflow: ellipsis;
 }
 
-.home__title span {
-    color: var(--first-color);
-}
-
-
 
 .home__description {
     line-height: 2.125;
