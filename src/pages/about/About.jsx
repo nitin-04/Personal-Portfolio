@@ -64,8 +64,6 @@ const About = () => {
               {`Beyond coding, I find joy in `}<span>Traveling</span> {`, playing `}<span>Chess</span> {`, exploring `}<span>Mountains</span>{`, and engaging in conversations with diverse perspectives.`}
             </p>
 
-
-
             <Resume />
           </div>
 
@@ -86,7 +84,6 @@ const About = () => {
           <Skills skill='Express' />
           <Skills skill='MongoDb' />
           <Skills skill='MySQL' />
-          {/* <Skills skill='Typescript' /> */}
           <Skills skill='Git' />
           <Skills skill='Github' />
           <Skills skill='Javascript' />

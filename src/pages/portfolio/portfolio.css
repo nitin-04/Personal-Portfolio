@@ -17,16 +17,16 @@
 }
 
 .projectBox {
-  width: 22%; /* Assuming 400px on a 1600px screen width */
-  height: 59.25vh; /* Assuming 500px on a 1600px screen height */
+  width: 22%;
+  height: 59.25vh; 
   border: 1px solid #252525;
-  border-radius: 0.3125%; /* Assuming 5px on 1600px width */
+  border-radius: 0.3125%; 
   text-align: center;
-  padding: 0.9375%; /* Assuming 15px on 1600px width */
-  letter-spacing: 0.03125vw; /* Assuming 0.5px on 1600px width */
-  font-size: 1.125vw; /* Assuming 18px on 1600px width */
-  line-height: 1.375vw; /* Assuming 22px on 1600px width */
-  margin: 0 6.25% 6.25% 1.5625%; /* Assuming 0px 100px 100px 25px on 1600px width */
+  padding: 0.9%; 
+  letter-spacing: 0.1vw; 
+  font-size: 0.9vw; 
+  line-height: 1.375vw; 
+  margin: 0 6.25% 6.25% 1.5%;
   transition: 0.5s;
 }
 
