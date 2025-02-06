@@ -3,12 +3,7 @@
   margin: 70px 200px;
 }
 
-.title__prj {
-  font-size: 75px;
-  font-weight: var(--weight-800);
-  text-align: center;
-  margin: 70px 40px 80px 0;
-}
+
 
 .projectHeading {
   font-family: var(--body-font);

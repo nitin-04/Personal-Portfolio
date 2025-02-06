@@ -9,13 +9,13 @@ import rps from '../../assets/rps.png';
 import snakegame from '../../assets/snakegame.png';
 import ttt from '../../assets/ttt.png';
 
- 
+
 
 const Projects = () => {
   return (
-    <div id='project'>
+    <section className='section'>
 
-      <h2 className="title__prj">
+      <h2 className="title">
         MY <span>PROJECTS</span>
       </h2>
 
@@ -36,7 +36,7 @@ const Projects = () => {
         <ProjectBox projectPhoto={comingsoon} projectName="Comingsoon" />
       </div>
 
-    </div>
+    </section>
   )
 }
 
