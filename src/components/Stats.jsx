@@ -7,7 +7,7 @@ const Stats = () => {
     {
       id: 1,
       no: '8+',
-      title: 'Completed of <br /> Projects',
+      title: 'Completed  <br /> Projects',
     },
 
     {
@@ -16,14 +16,14 @@ const Stats = () => {
       title: 'LeetCode <br /> Questions',
     },
     {
-      id: 2,
-      no: '45+',
-      title: 'LeetCode <br /> Questions',
+      id: 3,
+      no: '10+',
+      title: 'Hours <br /> Learning',
     },
     {
-      id: 2,
-      no: '45+',
-      title: 'LeetCode <br /> Questions',
+      id: 4,
+      no: '100+',
+      title: 'Resolved <br /> Bugs',
     }
 
   ];
