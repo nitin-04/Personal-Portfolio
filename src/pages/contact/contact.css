@@ -121,15 +121,14 @@
     position: relative;
     overflow: hidden;
     transition: all 0.25s ease-in-out;
-  }
-  
-  
-  .send_button:hover {
+}
+
+
+.send_button:hover {
     color: var(--text-white);
-  
-  }
-  
-  .send_button::before {
+}
+
+.send_button::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -137,13 +136,13 @@
     background-color: var(--first-color);
     z-index: -1;
     transition: all 0.3s ease-out;
-  }
-  
-  .send_button:hover::before{
+}
+
+.send_button:hover::before {
     transform: translateX(0);
-  }
-  
-  .send_button__icon {
+}
+
+.send_button__icon {
     background-color: var(--first-color);
     position: absolute;
     inset-block: -2px;
@@ -154,7 +153,7 @@
     font-size: 170%;
     text-align: center;
     line-height: 70px;
-  }
+}
 
 .status-message {
     margin-top: 10px;
@@ -172,3 +171,95 @@
 
 
 
+/* Mobile Screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .contact__form {
+        padding: 5px;
+    }
+
+    .contact__title {
+        font-size: 28px;
+    }
+
+    .contact__description {
+        font-size: 16px;
+    }
+
+    .contact__info .info__item {
+        column-gap: 8px;
+    }
+
+    .form__input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+    .form__control {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .send_button {
+        padding: 8px 12px;
+        font-size: 14px;
+        z-index: -1;
+        margin-bottom: 100px;
+    }
+
+    .status-message {
+        font-size: 20px;
+    }
+    .msg{
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .form__input-group {
+        grid-template-columns: 1fr;
+    }
+
+    .form__control {
+        font-size: 18px;
+    }
+
+    .send_button {
+        padding: 18px 40px;
+    }
+
+    .contact__title {
+        font-size: 22px;
+    }
+
+
+    .status-message {
+        font-size: 24px;
+    }
+}
+
+/* Larger Screens (min-width: 768px) */
+@media screen and (min-width: 768px) {
+    .contact__container {
+        grid-template-columns: 4fr 8fr;
+    }
+
+    .contact__title {
+        font-size: 40px;
+    }
+
+  
+}

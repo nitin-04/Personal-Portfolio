@@ -225,3 +225,93 @@ span{
   z-index: 9998;
 }
 
+
+
+/* Mobile Screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%; /* Reduce margin for better spacing */
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+
+  .button {
+    padding: 4% 10%;
+    font-size: var(--tiny-font-size);
+    height: 50px;
+  
+    
+  }
+  .cv{
+    height: auto;
+    margin-right: 25px;
+  }
+
+  .button__icon {
+    width: 45px;
+    line-height: 45px;
+    font-size: 120%;
+  }
+
+  .home__img {
+    border-radius: 15px;
+  }
+
+  .loader-container {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 85%;
+  }
+
+  .grid {
+    gap: 3%;
+  }
+
+  .title {
+    font-size: 9vw;
+  }
+
+  .button {
+    padding: 3% 8%;
+  }
+
+  .cursor-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .cursor-outline {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Larger Screens (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .home__img {
+    height: 100%;
+  }
+
+  .title {
+    font-size: 4vw;
+  }
+
+  .button {
+    padding: 2.6% 5%;
+  }
+  .cv{
+    margin-right: 34px;
+  }
+
+  .button__icon {
+    width: 60px;
+    line-height: 60px;
+  }
+}

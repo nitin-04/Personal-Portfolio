@@ -66,3 +66,84 @@
 
 
 
+
+
+/* Mobile Screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .para {
+    font-size: 3.5vw;
+    margin: 5% 8%;
+  }
+  .project_name{
+    font-size: 5vw;
+    color: var(--first-color);
+  }
+
+  .project {
+    margin: 3% 2%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectBox {
+    width: 90%;
+    height: auto;
+    margin: 3% 0;
+    font-size: 4vw;
+    padding: 5%;
+  }
+  .projectDesc{
+    margin-top: 30px;
+    height: 150px;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .projectPhoto {
+    margin: 15px 0;
+  }
+
+  .projectbtn {
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+  }
+}
+
+/* Tablet Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .para {
+    font-size: 3 vw;
+    margin: 4% 10%;
+  }
+
+  .projectBox {
+    justify-items: center;
+    width: 70%;
+    height: auto;
+    margin: 4% 2%;
+    font-size: 2vw;
+  }
+
+  .projectbtn {
+    font-size: 15px;
+    width: 44%;
+  }
+}
+
+/* Larger Screens (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  .para {
+    font-size: 1.2vw;
+    margin: 2.5% 12%;
+  }
+
+  .projectBox {
+    width: 25%;
+    height: auto;
+  }
+
+  .projectbtn {
+    font-size: 17px;
+  }
+}
