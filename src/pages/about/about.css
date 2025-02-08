@@ -114,7 +114,7 @@
   background-color: #121212;
   color: #FFFFFF;
   border: 2px solid #2a3034;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;

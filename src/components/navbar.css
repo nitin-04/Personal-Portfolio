@@ -1,110 +1,61 @@
-.nav__menu {
-    position: fixed;
-    inset-block: 0;
-    left: -100%;
-    background-color: var(--container-color);
-    width: 100%;
-    padding: 5% 2%;
-    transition: all 0.4s ease;
-  }
+.nav__link {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  border-bottom: 1px solid var(--border-color);
+  padding-block: 12px;
+}
+
+.nav {
+  position: fixed;
+  inset-block: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-block: 18px;
+}
+
+.nav__link {
+  padding: 0;
+  border-bottom: none;
+  background-color: var(--container-color);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.nav__icon {
+  font-size: 20px;
+  margin-inline: auto;
+  color: rgb(52, 47, 47);
+}
+
+.nav__name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--first-color);
+  height: auto;
+  line-height: 40px;
+  padding-inline: 24px;
+  border-radius: 24px;
+  font-size: 18px;
+  color: var(--text-white);
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover .nav__name {
+  right: 29px;
+  opacity: 1;
+  visibility: visible;
+  border-radius: 24px 0 0 24px;
+  height: 100%;
   
-  .show-menu {
-    left: 0;
-  }
-  
-  .nav__link {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
-    border-bottom: 1px solid var(--border-color);
-    padding-block: 12px;
-  }
-  
-  .nav__icon,
-  .nav__name {
-    color: var(--title-color);
-    font-size: 18px;
-  }
-  
-  .nav__toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    background-color: var(--container-color);
-    padding: 8px;
-  }
-  
-  .nav__toggle span {
-    display: block;
-    width: 16px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: var(--title-color);
-    margin-bottom: 4px;
-  }
-  
-  @media screen and (min-width: 1024px) {
-    .nav__menu {
-      all: unset;
-    }
-  
-    .nav__toggle {
-      display: none;
-    }
-  
-    .nav {
-      position: fixed;
-      inset-block: 0;
-      right: 20px;
-      display: flex;
-      align-items: center;
-    }
-  
-    .nav__item {
-      margin-block: 16px;
-    }
-  
-    .nav__link {
-      padding: 0;
-      border-bottom: none;
-      background-color: var(--container-color);
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      position: relative;
-    }
-  
-    .nav__icon {
-      font-size: 20px;
-      margin-inline: auto;
-      color: rgb(52, 47, 47);
-    }
-  
-    .nav__name {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: var(--first-color);
-      height: 100%;
-      line-height: 40px;
-      padding-inline: 24px;
-      border-radius: 24px;
-      font-size: 16px;
-      color: var(--text-white);
-      opacity: 0;
-      z-index: -1;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-  
-    .nav__link:hover .nav__name {
-      right: 24px;
-      opacity: 1;
-      visibility: visible;
-      border-radius: 24px 0 0 24px;
-    }
-  }
-  
+}

@@ -33,7 +33,7 @@
 
 .projectBox:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px 0 var(--first-color) inset;
+  box-shadow: 0 9px 10px 0 var(--first-color) inset;
   cursor: pointer;
 }
 
