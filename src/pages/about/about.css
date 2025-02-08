@@ -38,12 +38,13 @@
 
 .stats__box {
   border: 1px solid var(--border-color);
-  padding: 20px 30px 25px;
+  padding: 2% 3% 2.5%;
   border-radius: 5px;
+  
 }
-.stats{
-  /* background-color: #fff; */
-  margin: 0 50px 250px 100px;
+
+.stats {
+  margin: 10% 4% 30% 8%;
 }
 
 .stats__no {
@@ -81,7 +82,7 @@
 .separator {
   border-top: 1px solid var(--border-color);
   max-width: 40%;
-  margin: 72px auto 56px;
+  margin: 60px auto 60px;
 }
 
 .subtitle__center {
@@ -91,15 +92,16 @@
 
 .skills {
   padding: 2.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+
 }
 
 .skills__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(250px, 1fr)); 
+  gap: 20px; 
   padding: 1%;
+  justify-items: stretch; 
 }
 
 .SkillBox {
@@ -107,6 +109,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   font-size: 90px;
   background-color: #121212;
   color: #FFFFFF;
@@ -116,8 +119,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: auto;
 }
 
 .SkillBox:hover {

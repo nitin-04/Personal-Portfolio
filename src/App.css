@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 
 :root {
   --first-color:  #0F6292;
@@ -33,13 +40,7 @@
   --weight-800: 800;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  
-}
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -111,28 +112,28 @@ img {
 
 /* Resuable css */
 
-.container{
-  /* background-color: var(--first-color); */
-  max-width: 78.13%;
+.container {
+  max-width: 80%;
   margin-inline: auto;
-
+  /* background-color: #fff; */
 }
 
 .grid {
   display: grid;
-  gap: 30px;
+  gap: 5%;
 }
 
 .section {
-  padding-block: 3%;
+  padding-block: 2%;
 }
 
 .title {
   font-size: 4vw;
   font-weight: var(--weight-800);
   text-align: center;
-  margin: 0 2.5% 5% 0;
+  margin: 0 2% 3%;
 }
+
 
 span{
   color: var(--first-color);
@@ -142,16 +143,17 @@ span{
 .button {
   display: inline-block;
   color: var(--title-color);
-  border: 1px solid var(--first-color);
-  padding: 15px 70px 15px 35px;
-  border-radius: 35px;  
-  font-family: var(--second-font);
+  border: 2px solid var(--first-color);
+  padding: 3% 12% 2% 3%;
+  border-radius: 50px;
+  font-family: var(--body-font);
   font-size: var(--small-font-size);
   font-weight: var(--weight-500);
   position: relative;
   overflow: hidden;
   transition: all 0.25s ease-in-out;
 }
+
 
 .button:hover {
   color: var(--text-white);
@@ -177,10 +179,10 @@ span{
   position: absolute;
   inset-block: -2px;
   right: 0;
-  width: 55px;
+  width: 60px;
   border-radius: 50%;
   color: var(--text-white);
-  font-size: var(--large-font-size);
+  font-size: 150%;
   text-align: center;
   line-height: 60px;
 }

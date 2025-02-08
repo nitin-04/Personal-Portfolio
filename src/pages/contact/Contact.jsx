@@ -91,7 +91,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-
+ 
                 <form onSubmit={handleSubmit} className="contact__form">
                     <div className="form__input-group">
                         <div className="form__input-div">
@@ -140,9 +140,9 @@ const Contact = () => {
                         />
                     </div>
 
-                    <button className="button" type="submit" disabled={status.loading}>
+                    <button className="send_button" type="submit" disabled={status.loading}>
                         <div className="msg">{status.loading ? "Sending..." : "Send Message"}</div>
-                        <span className="button__icon contact__button-icon">
+                        <span className="send_button__icon ">
                             <FiSend />
                         </span>
                     </button>

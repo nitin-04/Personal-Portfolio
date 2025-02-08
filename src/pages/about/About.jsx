@@ -78,7 +78,7 @@ const About = () => {
 
       <section className="skills">
         <h1 className="section__subtitle subtitle__center"> My <span>Skills</span></h1>
-        <div className="skills__container grid">
+        <div className="skills__container ">
           <Skills skill='React' />
           <Skills skill='Node' />
           <Skills skill='Express' />
@@ -92,7 +92,6 @@ const About = () => {
           <Skills skill='Excel' />
           <Skills skill='HTML' />
           <Skills skill='CSS' />
-          {/* <Skills skill='Figma' /> */}
           <Skills skill='Vercel' />
           <Skills skill='Npm' />
           <Skills skill='Postman' />

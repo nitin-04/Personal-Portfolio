@@ -106,13 +106,55 @@
 }
 
 .msg {
-    font-size: 18px;
+    font-size: var(--weight-600);
 }
 
-.contact__button-icon {
-    font-size: 25px;
-    line-height: 64px;
-}
+.send_button {
+    display: inline-block;
+    color: var(--title-color);
+    border: 2px solid var(--first-color);
+    padding: 3% 12% 2% 3%;
+    border-radius: 50px;
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-500);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  
+  .send_button:hover {
+    color: var(--text-white);
+  
+  }
+  
+  .send_button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translate(-100%);
+    background-color: var(--first-color);
+    z-index: -1;
+    transition: all 0.3s ease-out;
+  }
+  
+  .send_button:hover::before{
+    transform: translateX(0);
+  }
+  
+  .send_button__icon {
+    background-color: var(--first-color);
+    position: absolute;
+    inset-block: -2px;
+    right: 0;
+    width: 60px;
+    border-radius: 50%;
+    color: var(--text-white);
+    font-size: 170%;
+    text-align: center;
+    line-height: 70px;
+  }
 
 .status-message {
     margin-top: 10px;
