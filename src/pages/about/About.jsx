@@ -54,15 +54,24 @@ const About = () => {
             <h3 className="section__subtitle"><span>Information About Me</span></h3>
 
             <p className="about__para">
-              {`I hold a `}<span>Bachelor</span>{`'s  degree in `}<span> Mathematics</span>{`, where I honed my problem-solving and logical thinking skills. My passion for IT led me to transition into web development and pursue a `}<span> Master</span>{`'s in `}<span> Computer Applications</span>{` , specializing in Data Science, currently in my final year.`}
+              {`I hold a `}<span>{`Bachelor's degree`}</span>{` in `}<span>Mathematics</span>{`, where I developed strong `}
+              <span>problem-solving</span>{` and `}<span>logical thinking</span>{` skills. My passion for 
+              information technology led me to transition into `}<span>web development</span>{`, and I am currently pursuing a `}
+              <span>{`Master's degree`}</span>{` in `}<span>Computer Applications</span>{` with a specialization in `}
+              <span>Data Science</span>{`, now in my `}<span>final year</span>{`.`}
               <br /><br />
-             
-              
-              {`In my journey, I’ve gained hands-on experience with technologies like`} <span>ReactJS, JavaScript,</span>{` and various database tools. I enjoy creating original projects with captivating designs that solve real-world problems.`}
+
+              {`Throughout my journey, I have gained hands-on experience with technologies such as `}
+              <span>ReactJS</span>{`, `}<span>JavaScript</span>{`, and various `}<span> tools</span>{`.`}
+              {` I enjoy creating original`}<span> projects</span>{` with captivating `}<span>designs</span>{` that address
+              real-world problems.`}
               <br /><br />
-             
-              {`Beyond coding, I find joy in `}<span>Traveling</span> {`, playing `}<span>Chess</span> {`, exploring `}<span>Mountains</span>{`, and engaging in conversations with diverse perspectives.`}
+
+              {`Outside of coding, I take pleasure in `}<span>traveling</span>{`, `}<span>playing chess</span>{`, `}
+              <span>exploring mountainous areas</span>{`, and engaging in conversations that offer 
+              diverse perspectives.`}
             </p>
+
 
             <Resume />
           </div>

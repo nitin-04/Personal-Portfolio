@@ -13,12 +13,13 @@ const Home = () => {
             {`I' M`}  <span>Nitin Bahuguna</span> <br />Web Developer
           </h1>
 
-          <p className="home__description">{`I’m a beginner web developer passionate about building and designing websites. I’m currently
-                    learning the fundamentals of HTML, CSS, and JavaScript, and I’m excited to explore front-end and
-                    back-end technologies. I enjoy creating functional and visually appealing web pages and am eager to
-                    develop my skills through hands-on projects and continuous learning. My goal is to become proficient
-                    in web development and contribute to innovative web solutions.`}
-          </p>
+          <p className="home__description">
+            {`I am a passionate and innovative React JS Developer dedicated to crafting engaging, user-focused web applications.
+              With deep expertise in JavaScript and modern frameworks.`}
+              <br /> <br/>
+              {`I embrace challenges head-on—whether it’s developing dynamic front-end features, enhancing performance, or seamlessly integrating back-end APIs for real-time functionality.
+              My method combines clean, maintainable code with a sharp design sensibility, ensuring that each project harmoniously blends creativity with technical expertise.`}
+            </p>
 
           <Resume />
         </div>
