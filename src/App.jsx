@@ -7,6 +7,7 @@ import Contact from './pages/contact/Contact'
 import About from './pages/about/About'
 import { useEffect, useState } from 'react'
 import RingLoader from "react-spinners/RingLoader"
+import Cursor from './components/Cursor'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <Cursor/>
       {isLoading ? (
         <div className="loader-container">
           <RingLoader
