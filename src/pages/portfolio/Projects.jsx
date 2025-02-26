@@ -8,6 +8,7 @@ import comingsoon from '../../assets/comingsoon.png';
 import rps from '../../assets/rps.png';
 import snakegame from '../../assets/snakegame.png';
 import ttt from '../../assets/ttt.png';
+import devdate from '../../assets/devdate.jpg';
 
 
 
@@ -28,6 +29,7 @@ const Projects = () => {
       <div className='project'>
         <ProjectBox projectPhoto={annadata} projectName="Annadata" />
         <ProjectBox projectPhoto={snakegame} projectName="SnakeGame" />
+        <ProjectBox projectPhoto={devdate} projectName="DevDate" />
         <ProjectBox projectPhoto={bmi} projectName="BMI" />
         <ProjectBox projectPhoto={ttt} projectName="TicTacToe" />
         <ProjectBox projectPhoto={bgChanger} projectName="BgChanger" />
