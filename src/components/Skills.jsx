@@ -1,13 +1,34 @@
 import { CgCPlusPlus } from "react-icons/cg";
-import { FaHtml5, FaCss3, FaFileExcel,  FaReact, FaGitAlt, FaGithub, FaNpm, FaFigma, FaBootstrap } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaFileExcel,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaNpm,
+  FaFigma,
+  FaBootstrap,
+} from "react-icons/fa";
 import { DiNodejs, DiJavascript1 } from "react-icons/di";
-import { SiExpress, SiMysql, SiMongodb, SiPostman, SiVercel, SiPython, SiTailwindcss, SiTypescript } from "react-icons/si";
-import PropTypes from 'prop-types';
+import { RiNextjsFill } from "react-icons/ri";
+import {
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiPostman,
+  SiVercel,
+  SiPython,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+import PropTypes from "prop-types";
 import ".././pages/about/about.css";
 
 const Skills = ({ skill }) => {
   const icon = {
-    'C++': <CgCPlusPlus />,
+    Nextjs: <RiNextjsFill />,
+    "C++": <CgCPlusPlus />,
     Postman: <SiPostman />,
     React: <FaReact />,
     Javascript: <DiJavascript1 />,
@@ -27,8 +48,7 @@ const Skills = ({ skill }) => {
     HTML: <FaHtml5 />,
     CSS: <FaCss3 />,
     Excel: <FaFileExcel />,
-
-  }
+  };
 
   return (
     <div title={skill} className="SkillBox">
@@ -36,10 +56,9 @@ const Skills = ({ skill }) => {
       <p className="SkillLabel">{skill}</p>
     </div>
   );
-}
+};
 Skills.propTypes = {
-  skill: PropTypes.string.isRequired
+  skill: PropTypes.string.isRequired,
 };
 
 export default Skills;
-
