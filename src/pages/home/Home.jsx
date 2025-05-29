@@ -17,10 +17,15 @@ const Home = () => {
 
           <p className="home__description">
             {`I am a passionate and innovative MERN Stack Developer dedicated to building full-fledged, user-focused web applications.
-    With strong expertise in JavaScript, React, Node.js, Express, and MongoDB.`}
+  With strong expertise in JavaScript, React, Node.js, Express, and MongoDB.`}
             <br /> <br />
-            {`I embrace challenges head-on—whether it’s developing dynamic front-end interfaces, designing robust back-end logic, or seamlessly integrating APIs for real-time functionality.
-    My approach combines clean, maintainable code with a sharp design sensibility, ensuring every project reflects both creativity and technical depth.`}
+            {`Through hands-on experience at Yup Solutions Pvt Ltd, where I collaborate remotely with cross-functional teams to build scalable, real-time applications across different time zones. 
+  This experience has strengthened my skills in performance optimization, API integration, and end-to-end development.
+  `}
+            <br />
+            <br />
+            {`I embrace challenges head-on—whether it’s building intuitive interfaces, optimizing performance, or ensuring smooth API communication.
+  My approach combines clean, maintainable code with a strong eye for design, ensuring every project blends functionality with visual appeal.`}
           </p>
 
           <Resume />

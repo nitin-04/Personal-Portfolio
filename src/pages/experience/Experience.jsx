@@ -10,10 +10,11 @@ const Experience = () => {
       title: "Full Stack Developer Intern",
       company: "Yup Solutions Pvt Ltd",
       description: [
+        "Contributed to the development of a dynamic web platform using Next.js, React, Tailwind CSS, and Clerk for authentication.",
+        "Developed reusable UI components using Radix UI and integrated complex form handling with React Hook Form and Zod validation.",
         "Designed and implemented scalable RESTful APIs with Express.js, enhancing backend performance and data integrity",
         "Debugged and optimized full-stack solutions, improving system stability and user experience",
         "Collaborated with cross-functional teams to deliver high-quality software solutions",
-        "Implemented responsive UI components using React.js and modern CSS frameworks",
       ],
     },
   ];
