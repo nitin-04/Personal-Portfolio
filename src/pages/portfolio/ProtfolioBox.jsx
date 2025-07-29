@@ -15,10 +15,17 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     DevDateGithub: "https://github.com/nitin-04/DevDate-web",
     DevDateWebsite: "",
 
+    DriveDesc:
+      "A cloud-based image management app inspired by Google Drive, allowing users to create folders, upload images, and search seamlessly.",
+    DriveGithub: "https://github.com/nitin-04/Drive-web",
+    DriveWebsite:
+      "https://drive.google.com/file/d/1fG6R1W73O_9pvuc_Cfj5q5J4qLzrl5A_/view?usp=sharing",
+
     ContentShareDesc:
       "Content Share is a platform for sharing and discovering content, allowing users to upload files, Ppt, Video and Pdf.",
     ContentShareGithub: "https://github.com/nitin-04/ContentShare-Web",
-    ContentShareWebsite: "https://content-share-web.vercel.app/",
+    ContentShareWebsite:
+      "https://drive.google.com/file/d/1pHXnAJ2N-QHpWMwlcY0BMszdLTBU0hKE/view?usp=sharing",
 
     SnakeGameDesc:
       "A simple Snake Game where the snake grows by eating food, with gameplay ending upon collision with the walls or itself.",

@@ -10,6 +10,7 @@ import snakegame from "../../assets/snakegame.png";
 import ttt from "../../assets/ttt.png";
 import devdate from "../../assets/devdate.jpg";
 import share from "../../assets/share.png";
+import drive from "../../assets/drive.png";
 
 const Projects = () => {
   return (
@@ -27,6 +28,7 @@ const Projects = () => {
       <div className="project">
         <ProjectBox projectPhoto={annadata} projectName="Annadata" />
         <ProjectBox projectPhoto={devdate} projectName="DevDate" />
+        <ProjectBox projectPhoto={drive} projectName="Drive" />
         <ProjectBox projectPhoto={share} projectName="ContentShare" />
         <ProjectBox projectPhoto={snakegame} projectName="SnakeGame" />
         <ProjectBox projectPhoto={bmi} projectName="BMI" />

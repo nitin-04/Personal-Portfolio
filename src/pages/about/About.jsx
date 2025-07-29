@@ -62,26 +62,21 @@ const About = () => {
             </h3>
 
             <p className="about__para">
-              {`I hold a `}
-              <span>{`Bachelor's degree`}</span>
-              {` in `}
-              <span>Mathematics</span>
-              {`, where I developed strong `}
-              <span>problem-solving</span>
-              {` and `}
-              <span>logical thinking</span>
-              {` skills. My passion for 
-              information technology led me to transition into `}
-              <span>web development</span>
-              {`, and I am currently pursuing a `}
+              {`I recently completed my `}
               <span>{`Master's degree`}</span>
               {` in `}
               <span>Computer Applications</span>
               {` with a specialization in `}
               <span>Data Science</span>
-              {`, now in my `}
-              <span>final year</span>
-              {`.`}
+              {`, where I honed my skills in both development and analytics. Prior to that, I earned a `}
+              <span>{`Bachelor's degree`}</span>
+              {` in `}
+              <span>Mathematics</span>
+              {`, which helped me develop strong `}
+              <span>problem-solving</span>
+              {` and `}
+              <span>logical thinking</span>
+              {` skills.`}
               <br />
               <br />
 
@@ -91,26 +86,24 @@ const About = () => {
               <span>ReactJS</span>
               {`, `}
               <span>JavaScript</span>
-              {`, and various `}
-              <span> tools</span>
+              {`, and various other `}
+              <span>tools</span>
               {`.`}
-              {` I enjoy creating original`}
-              <span> projects</span>
-              {` with captivating `}
+              {` I enjoy building original `}
+              <span>projects</span>
+              {` with engaging `}
               <span>designs</span>
-              {` that address
-              real-world problems.`}
+              {` that solve real-world problems.`}
               <br />
               <br />
 
-              {`Outside of coding, I take pleasure in `}
+              {`Beyond coding, I enjoy `}
               <span>traveling</span>
               {`, `}
               <span>playing chess</span>
               {`, `}
               <span>exploring mountainous areas</span>
-              {`, and engaging in conversations that offer 
-              diverse perspectives.`}
+              {`, and having conversations that bring in diverse perspectives.`}
             </p>
 
             <Resume />
