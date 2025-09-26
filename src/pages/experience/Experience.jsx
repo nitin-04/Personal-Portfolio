@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       icon: <FaBriefcase />,
-      year: "Feb 2025 - Present",
+      year: "Feb 2025 - August 2025",
       title: "Full Stack Developer Intern",
       company: "Yup Solutions Pvt Ltd",
       description: [
