@@ -1,50 +1,58 @@
-import Skills from "../../components/Skills";
-import Stats from "../../components/Stats";
-import ResumeItem from "../../components/ResumeItem";
-import "./about.css";
-import Resume from "../../components/Resume";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import Skills from '../../components/Skills';
+import Stats from '../../components/Stats';
+import ResumeItem from '../../components/ResumeItem';
+import './about.css';
+import Resume from '../../components/Resume';
+import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
   const resume = [
     {
       id: 1,
-      category: "education",
+      category: 'education',
       icon: <FaBriefcase />,
-      year: "Feb 2025 - Present",
-      title: "YUP Solutions Pvt Ltd <span> Full Stack Developer Intern </span>",
-      desc: "Remote - Mississauga, Canada ",
+      year: 'August 2025 - Present',
+      title: 'KTP InfraTech Pvt Ltd <span> Software Engineer Intern </span>',
+      desc: 'Sector 49, Gurgaon ',
     },
     {
       id: 2,
-      category: "education",
-      icon: <FaGraduationCap />,
-      year: "2023-2025",
-      title: "Master Degree <span> Master Of Computer Applications </span>",
-      desc: "Gautam Buddha University, Greater Noida",
+      category: 'education',
+      icon: <FaBriefcase />,
+      year: 'Feb 2025 - August 2025',
+      title: 'YUP Solutions Pvt Ltd <span> Full Stack Developer Intern </span>',
+      desc: 'Remote - Mississauga, Canada ',
     },
-
     {
       id: 3,
+      category: 'education',
       icon: <FaGraduationCap />,
-      year: "2019-2022",
-      title: "Bachelor Degree <span> Bachelor of Science </span>",
-      desc: "Hemvati Nandan Bahuguna Garhwal University,  Srinagar Garhwal, Uttarakhand",
+      year: '2023-2025',
+      title: 'Master Degree <span> Master Of Computer Applications </span>',
+      desc: 'Gautam Buddha University, Greater Noida',
     },
 
     {
       id: 4,
       icon: <FaGraduationCap />,
-      year: "2018",
-      title: "Intermediate",
-      desc: "Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand",
+      year: '2019-2022',
+      title: 'Bachelor Degree <span> Bachelor of Science </span>',
+      desc: 'Hemvati Nandan Bahuguna Garhwal University,  Srinagar Garhwal, Uttarakhand',
     },
+
     {
       id: 5,
       icon: <FaGraduationCap />,
-      year: "2016",
-      title: "High School",
-      desc: "Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand",
+      year: '2018',
+      title: 'Intermediate',
+      desc: 'Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand',
+    },
+    {
+      id: 6,
+      icon: <FaGraduationCap />,
+      year: '2016',
+      title: 'High School',
+      desc: 'Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand',
     },
   ];
 
@@ -119,7 +127,7 @@ const About = () => {
 
       <section className="skills">
         <h1 className="section__subtitle subtitle__center">
-          {" "}
+          {' '}
           My <span>Skills</span>
         </h1>
         <div className="skills__container ">

@@ -1,20 +1,34 @@
-import "./experience.css";
-import { FaBriefcase } from "react-icons/fa";
+import './experience.css';
+import { FaBriefcase } from 'react-icons/fa';
 
 const Experience = () => {
   const experiences = [
     {
       id: 1,
       icon: <FaBriefcase />,
-      year: "Feb 2025 - Present",
-      title: "Full Stack Developer Intern",
-      company: "Yup Solutions Pvt Ltd",
+      year: 'August 2025 - Present',
+      title: 'Software Engineer Intern',
+      company: 'KTP InfraTech Pvt Ltd',
       description: [
-        "Contributed to the development of a dynamic web platform using Next.js, React, Tailwind CSS, and Clerk for authentication.",
-        "Developed reusable UI components using Radix UI and integrated complex form handling with React Hook Form and Zod validation.",
-        "Designed and implemented scalable RESTful APIs with Express.js, enhancing backend performance and data integrity",
-        "Debugged and optimized full-stack solutions, improving system stability and user experience",
-        "Collaborated with cross-functional teams to deliver high-quality software solutions",
+        'Developed dynamic, responsive UIs with React.js, Tailwind CSS, and modern ES6+ JavaScript, enhancing user engagement and performance.',
+        'Contributing to multiple MERN stack projects, ensuring scalable and maintainable solutions across diverse business modules.',
+        'Researched and implemented Large Language Model (LLM) and Retrieval-Augmented Generation (RAG) pipelines, exploring AI-driven knowledge retrieval and contextual response generation.',
+        'Troubleshooting bugs, improving UI performance, and ensuring consistency across various projects.',
+        'Debugged and optimized application workflows, enhancing overall system efficiency and performance.',
+      ],
+    },
+    {
+      id: 2,
+      icon: <FaBriefcase />,
+      year: 'Feb 2025 - August 2025',
+      title: 'Full Stack Developer Intern',
+      company: 'Yup Solutions Pvt Ltd',
+      description: [
+        'Contributed to the development of a dynamic web platform using Next.js, React, Tailwind CSS, and Clerk for authentication.',
+        'Developed reusable UI components using Radix UI and integrated complex form handling with React Hook Form and Zod validation.',
+        'Designed and implemented scalable RESTful APIs with Express.js, enhancing backend performance and data integrity',
+        'Debugged and optimized full-stack solutions, improving system stability and user experience',
+        'Collaborated with cross-functional teams to deliver high-quality software solutions',
       ],
     },
   ];
