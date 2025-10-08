@@ -25,7 +25,7 @@ const Home = () => {
   This experience strengthened my expertise in performance optimization, API integration, and end-to-end development.`}
             <br /> <br /> */}
             {`I thrive on solving complex challenges—whether it’s engineering intuitive interfaces, enhancing performance, or implementing seamless API communication.
-  My approach combines clean, maintainable code with an eye for design, ensuring every project delivers both functionality and visual impact.`}
+  `}
           </p>
 
           <Resume />
