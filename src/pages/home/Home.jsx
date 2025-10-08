@@ -1,6 +1,6 @@
-import Profile from "../../assets/Profile.png";
-import Resume from "../../components/Resume";
-import "./home.css";
+import Profile from '../../assets/Profile.png';
+import Resume from '../../components/Resume';
+import './home.css';
 
 const Home = () => {
   return (
@@ -16,16 +16,16 @@ const Home = () => {
           </h1>
 
           <p className="home__description">
-            {`I am a passionate and innovative MERN Stack Developer dedicated to building full-fledged, user-focused web applications.
-  With strong expertise in JavaScript, React, Node.js, Express, and MongoDB.`}
+            {`I am a passionate and innovative MERN Stack Developer dedicated to building full-fledged, user-focused web applications. 
+  I specialize in JavaScript, React, Node.js, Express, and MongoDB, crafting scalable solutions that blend functionality with clean design.`}
             <br /> <br />
-            {`Through hands-on experience at Yup Solutions Pvt Ltd, where I collaborate remotely with cross-functional teams to build scalable, real-time applications across different time zones. 
-  This experience has strengthened my skills in performance optimization, API integration, and end-to-end development.
-  `}
-            <br />
-            <br />
-            {`I embrace challenges head-on—whether it’s building intuitive interfaces, optimizing performance, or ensuring smooth API communication.
-  My approach combines clean, maintainable code with a strong eye for design, ensuring every project blends functionality with visual appeal.`}
+            {`Currently, I am working as a Software Engineer Intern at KTP Infratech, Gurgaon, where I contribute to multiple MERN stack projects and explore cutting-edge technologies like Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) pipelines for intelligent data-driven applications.`}
+            <br /> <br />
+            {/* {`Previously, at Yup Solutions Pvt Ltd, I collaborated remotely with cross-functional teams across different time zones to develop real-time, high-performance applications. 
+  This experience strengthened my expertise in performance optimization, API integration, and end-to-end development.`}
+            <br /> <br /> */}
+            {`I thrive on solving complex challenges—whether it’s engineering intuitive interfaces, enhancing performance, or implementing seamless API communication.
+  My approach combines clean, maintainable code with an eye for design, ensuring every project delivers both functionality and visual impact.`}
           </p>
 
           <Resume />
