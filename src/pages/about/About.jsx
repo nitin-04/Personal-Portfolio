@@ -11,7 +11,7 @@ const About = () => {
       id: 1,
       category: 'education',
       icon: <FaBriefcase />,
-      year: 'August 2025 - Present',
+      year: 'August 2025 - November 2025',
       title: 'KTP InfraTech Pvt Ltd <span> Software Engineer Intern </span>',
       desc: 'Sector 49, Gurgaon ',
     },
@@ -140,6 +140,7 @@ const About = () => {
           <Skills skill="Git" />
           <Skills skill="Github" />
           <Skills skill="Javascript" />
+          <Skills skill="Typescript" />
           <Skills skill="C++" />
           <Skills skill="Python" />
           <Skills skill="Excel" />

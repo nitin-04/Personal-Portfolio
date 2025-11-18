@@ -14,16 +14,15 @@ const Home = () => {
             {`I' M`} <span>Nitin Bahuguna</span> <br />
             Web Developer
           </h1>
-
           <p className="home__description">
             {`I am a passionate and innovative MERN Stack Developer dedicated to building full-fledged, user-focused web applications. 
   I specialize in JavaScript, React, Node.js, Express, and MongoDB, crafting scalable solutions that blend functionality with clean design.`}
             <br /> <br />
-            {`Currently, I am working as a Software Engineer Intern at KTP Infratech, Gurgaon, where I contribute to multiple MERN stack projects and explore cutting-edge technologies like Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) pipelines for intelligent data-driven applications.`}
+            {`Previously, as a Software Engineer Intern at KTP Infratech, Gurgaon, I contributed to multiple MERN stack projects and explored cutting-edge technologies like Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) pipelines for intelligent data-driven applications.`}
             <br /> <br />
             {/* {`Previously, at Yup Solutions Pvt Ltd, I collaborated remotely with cross-functional teams across different time zones to develop real-time, high-performance applications. 
   This experience strengthened my expertise in performance optimization, API integration, and end-to-end development.`}
-            <br /> <br /> */}
+        <br /> <br /> */}
             {`I thrive on solving complex challenges—whether it’s engineering intuitive interfaces, enhancing performance, or implementing seamless API communication.
   `}
           </p>
