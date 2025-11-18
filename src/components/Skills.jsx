@@ -1,4 +1,4 @@
-import { CgCPlusPlus } from "react-icons/cg";
+import { CgCPlusPlus } from 'react-icons/cg';
 import {
   FaHtml5,
   FaCss3,
@@ -9,9 +9,9 @@ import {
   FaNpm,
   FaFigma,
   FaBootstrap,
-} from "react-icons/fa";
-import { DiNodejs, DiJavascript1 } from "react-icons/di";
-import { RiNextjsFill } from "react-icons/ri";
+} from 'react-icons/fa';
+import { DiNodejs, DiJavascript1 } from 'react-icons/di';
+import { RiNextjsFill } from 'react-icons/ri';
 import {
   SiExpress,
   SiMysql,
@@ -21,17 +21,18 @@ import {
   SiPython,
   SiTailwindcss,
   SiTypescript,
-} from "react-icons/si";
-import PropTypes from "prop-types";
-import ".././pages/about/about.css";
+} from 'react-icons/si';
+import PropTypes from 'prop-types';
+import '.././pages/about/about.css';
 
 const Skills = ({ skill }) => {
   const icon = {
     Nextjs: <RiNextjsFill />,
-    "C++": <CgCPlusPlus />,
+    'C++': <CgCPlusPlus />,
     Postman: <SiPostman />,
     React: <FaReact />,
     Javascript: <DiJavascript1 />,
+    Typescript: <SiTypescript />,
     Node: <DiNodejs />,
     Express: <SiExpress />,
     MongoDb: <SiMongodb />,

@@ -1,10 +1,10 @@
-import { FaDownload } from "react-icons/fa6";
+import { FaDownload } from 'react-icons/fa6';
 
 const Resume = () => {
   return (
     <button className="button">
       <a
-        href="https://drive.google.com/file/d/1O2leuMg0LsvLD_vfEqyJsU0DSysYXuOz/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Kxwy4KkZyftIzVCjD67vJfqM6ahhm5fA/view?usp=sharing"
         target="_blank"
         download="Nitin's Resume"
       >
