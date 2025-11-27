@@ -45,7 +45,6 @@ const Skills = ({ skill }) => {
     Python: <SiPython />,
     Tailwind: <SiTailwindcss />,
     MySQL: <SiMysql />,
-    Typescript: <SiTypescript />,
     HTML: <FaHtml5 />,
     CSS: <FaCss3 />,
     Excel: <FaFileExcel />,

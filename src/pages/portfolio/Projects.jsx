@@ -1,16 +1,17 @@
-import ProjectBox from "../../pages/portfolio/ProtfolioBox";
-import "./portfolio.css";
-import annadata from "../../assets/annadata.png";
-import bgChanger from "../../assets/bg_changer.png";
-import bmi from "../../assets/bmi.png";
-import colorswitch from "../../assets/colorswitch.png";
-import comingsoon from "../../assets/comingsoon.png";
-import rps from "../../assets/rps.png";
-import snakegame from "../../assets/snakegame.png";
-import ttt from "../../assets/ttt.png";
-import devdate from "../../assets/devdate.jpg";
-import share from "../../assets/share.png";
-import drive from "../../assets/drive.png";
+import ProjectBox from '../../pages/portfolio/ProtfolioBox';
+import './portfolio.css';
+import annadata from '../../assets/annadata.png';
+import bgChanger from '../../assets/bg_changer.png';
+import bmi from '../../assets/bmi.png';
+import colorswitch from '../../assets/colorswitch.png';
+import comingsoon from '../../assets/comingsoon.png';
+import rps from '../../assets/rps.png';
+import snakegame from '../../assets/snakegame.png';
+import ttt from '../../assets/ttt.png';
+import devdate from '../../assets/devdate.jpg';
+import share from '../../assets/share.png';
+import drive from '../../assets/drive.png';
+import pdfChecker from '../../assets/pdfChecker.png';
 
 const Projects = () => {
   return (
@@ -31,6 +32,7 @@ const Projects = () => {
         <ProjectBox projectPhoto={drive} projectName="Drive" />
         <ProjectBox projectPhoto={share} projectName="ContentShare" />
         <ProjectBox projectPhoto={snakegame} projectName="SnakeGame" />
+        <ProjectBox projectPhoto={pdfChecker} projectName="PdfChecker" />
         <ProjectBox projectPhoto={bmi} projectName="BMI" />
         <ProjectBox projectPhoto={ttt} projectName="TicTacToe" />
         <ProjectBox projectPhoto={bgChanger} projectName="BgChanger" />
