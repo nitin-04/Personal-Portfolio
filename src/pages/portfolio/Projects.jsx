@@ -1,6 +1,7 @@
 import ProjectBox from '../../pages/portfolio/ProtfolioBox';
 import './portfolio.css';
 import annadata from '../../assets/annadata.png';
+import astro from '../../assets/astro.png';
 import bgChanger from '../../assets/bg_changer.png';
 import bmi from '../../assets/bmi.png';
 import colorswitch from '../../assets/colorswitch.png';
@@ -29,6 +30,7 @@ const Projects = () => {
       <div className="project">
         <ProjectBox projectPhoto={annadata} projectName="Annadata" />
         <ProjectBox projectPhoto={devdate} projectName="DevDate" />
+        <ProjectBox projectPhoto={astro} projectName="Astro" />
         <ProjectBox projectPhoto={drive} projectName="Drive" />
         <ProjectBox projectPhoto={share} projectName="ContentShare" />
         <ProjectBox projectPhoto={snakegame} projectName="SnakeGame" />

@@ -1,12 +1,10 @@
-
-import parse from "html-react-parser"
+import parse from 'html-react-parser';
 
 const Stats = () => {
-
   const stats = [
     {
       id: 1,
-      no: '8+',
+      no: '10+',
       title: 'Completed  <br /> Projects',
     },
 
@@ -17,17 +15,15 @@ const Stats = () => {
     },
     {
       id: 3,
-      no: '10+',
+      no: '12+',
       title: 'Hours <br /> Learning',
     },
     {
       id: 4,
       no: '100+',
       title: 'Resolved <br /> Bugs',
-    }
-
+    },
   ];
-
 
   return (
     <>
@@ -37,7 +33,7 @@ const Stats = () => {
             <h3 className="stats__no">{no}</h3>
             <p className="stats__title">{parse(title)}</p>
           </div>
-        )
+        );
       })}
     </>
   );

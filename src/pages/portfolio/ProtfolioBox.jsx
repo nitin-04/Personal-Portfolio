@@ -15,6 +15,11 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     DevDateGithub: 'https://github.com/nitin-04/DevDate-web',
     DevDateWebsite: '',
 
+    AstroDesc:
+      'Developed a dynamic astrology platform that processes user birth data to compute accurate planetary positions and render  Kundli reports and Lagna charts in real-time..',
+    AstroGithub: 'https://github.com/nitin-04/kundli',
+    AstroWebsite: 'https://kundli-psi.vercel.app',
+
     DriveDesc:
       'A cloud-based image management app inspired by Google Drive, allowing users to create folders, upload images, and search seamlessly.',
     DriveGithub: 'https://github.com/nitin-04/Drive-web',
@@ -59,7 +64,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     PdfCheckerDesc:
       'A PDF checker web app that allows users to upload and check PDF files that having some sort of data.',
     PdfCheckerGithub: 'https://github.com/nitin-04/PdfChecker',
-    PdfCheckeWebsite: 'https://pdf-checker-ten.vercel.app/',
+    PdfCheckerWebsite: 'https://pdf-checker-ten.vercel.app/',
 
     // CommingsoonDesc: "",
     // ComingsoonGithub: "",
