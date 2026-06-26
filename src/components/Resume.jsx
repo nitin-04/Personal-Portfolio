@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <button className="button">
       <a
-        href="https://drive.google.com/file/d/1Kxwy4KkZyftIzVCjD67vJfqM6ahhm5fA/view?usp=sharing"
+        href="https://drive.google.com/file/d/1PnCBNMCyKxr80sltQQpW_6uFxhoLWlD-/view?usp=sharing"
         target="_blank"
         download="Nitin's Resume"
       >

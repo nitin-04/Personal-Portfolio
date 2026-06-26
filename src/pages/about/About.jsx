@@ -11,12 +11,20 @@ const About = () => {
       id: 1,
       category: 'education',
       icon: <FaBriefcase />,
+      year: 'December 2025 - May 2026',
+      title: 'Ablespace <span> Full Stack Developer </span>',
+      desc: 'Remote - USA ',
+    },
+    {
+      id: 2,
+      category: 'education',
+      icon: <FaBriefcase />,
       year: 'August 2025 - November 2025',
       title: 'KTP InfraTech Pvt Ltd <span> Software Engineer Intern </span>',
       desc: 'Sector 49, Gurgaon ',
     },
     {
-      id: 2,
+      id: 3,
       category: 'education',
       icon: <FaBriefcase />,
       year: 'Feb 2025 - August 2025',
@@ -24,7 +32,7 @@ const About = () => {
       desc: 'Remote - Mississauga, Canada ',
     },
     {
-      id: 3,
+      id: 4,
       category: 'education',
       icon: <FaGraduationCap />,
       year: '2023-2025',
@@ -33,7 +41,7 @@ const About = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       icon: <FaGraduationCap />,
       year: '2019-2022',
       title: 'Bachelor Degree <span> Bachelor of Science </span>',
@@ -41,14 +49,14 @@ const About = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       icon: <FaGraduationCap />,
       year: '2018',
       title: 'Intermediate',
       desc: 'Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand',
     },
     {
-      id: 6,
+      id: 7,
       icon: <FaGraduationCap />,
       year: '2016',
       title: 'High School',
@@ -70,17 +78,21 @@ const About = () => {
             </h3>
 
             <p className="about__para">
-              {`I recently completed my `}
+              {`I recently completed my tenure as a `}
+              <span>Full Stack Developer</span>
+              {` at `}
+              <span>AbleSpace</span>
+              {`, where I focused on architecting robust backend systems and highly responsive frontend interfaces. I hold a `}
               <span>{`Master's degree`}</span>
               {` in `}
               <span>Computer Applications</span>
               {` with a specialization in `}
               <span>Data Science</span>
-              {`, where I honed my skills in both development and analytics. Prior to that, I earned a `}
+              {`, which provided a strong foundation in both development and analytics. Prior to that, I earned a `}
               <span>{`Bachelor's degree`}</span>
               {` in `}
               <span>Mathematics</span>
-              {`, which helped me develop strong `}
+              {`, helping me develop strong `}
               <span>problem-solving</span>
               {` and `}
               <span>logical thinking</span>

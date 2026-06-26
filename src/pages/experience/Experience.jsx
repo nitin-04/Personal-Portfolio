@@ -6,6 +6,19 @@ const Experience = () => {
     {
       id: 1,
       icon: <FaBriefcase />,
+      year: 'December 2025 - May 2026',
+      title: 'Full Stack Developer',
+      company: 'AbleSpace',
+      description: [
+        'Architected and maintained robust server-side applications using NestJS, Node.js, and MongoDB, focusing on API optimization and scalable data models.',
+        'Translated intricate Figma designs into responsive frontend components with Next.js and React, implementing dynamic UI behaviors like shifting placeholders and conditional rendering.',
+        'Enhanced overall application reliability by developing comprehensive end-to-end (E2E) test cases for critical user flows.',
+        'Streamlined development workflows and rapid iteration cycles, ensuring clean version control management and high-quality code delivery.',
+      ],
+    },
+    {
+      id: 2,
+      icon: <FaBriefcase />,
       year: 'August 2025 - November 2025',
       title: 'Software Engineer Intern',
       company: 'KTP InfraTech Pvt Ltd',
@@ -18,7 +31,7 @@ const Experience = () => {
       ],
     },
     {
-      id: 2,
+      id: 3,
       icon: <FaBriefcase />,
       year: 'Feb 2025 - August 2025',
       title: 'Full Stack Developer Intern',

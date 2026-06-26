@@ -15,16 +15,12 @@ const Home = () => {
             Web Developer
           </h1>
           <p className="home__description">
-            {`I am a passionate and innovative MERN Stack Developer dedicated to building full-fledged, user-focused web applications. 
-  I specialize in JavaScript, React, Node.js, Express, and MongoDB, crafting scalable solutions that blend functionality with clean design.`}
+            {`I am a passionate and innovative Full Stack Developer dedicated to building robust, user-focused web applications. 
+  I specialize in the modern JavaScript ecosystem, including React, Next.js, Node.js, NestJS, and MongoDB, crafting scalable solutions that blend powerful functionality with clean design.`}
             <br /> <br />
-            {`Previously, as a Software Engineer Intern at KTP Infratech, Gurgaon, I contributed to multiple MERN stack projects and explored cutting-edge technologies like Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) pipelines for intelligent data-driven applications.`}
+            {`Previously, as a Full Stack Developer at AbleSpace, I focused on architecting scalable backend systems and translating complex UI/UX designs into highly responsive, interactive frontend components.`}
             <br /> <br />
-            {/* {`Previously, at Yup Solutions Pvt Ltd, I collaborated remotely with cross-functional teams across different time zones to develop real-time, high-performance applications. 
-  This experience strengthened my expertise in performance optimization, API integration, and end-to-end development.`}
-        <br /> <br /> */}
-            {`I thrive on solving complex challenges—whether it’s engineering intuitive interfaces, enhancing performance, or implementing seamless API communication.
-  `}
+            {`I thrive on solving complex challenges—whether it’s engineering scalable APIs, enhancing UI performance, or delivering seamless end-to-end user experiences.`}
           </p>
 
           <Resume />
