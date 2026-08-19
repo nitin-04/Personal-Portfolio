@@ -19,7 +19,7 @@ const Experience = () => {
     {
       id: 2,
       icon: <FaBriefcase />,
-      year: 'August 2025 - November 2025',
+      year: 'August 2025 - December 2025',
       title: 'Software Engineer Intern',
       company: 'KTP InfraTech Pvt Ltd',
       description: [
