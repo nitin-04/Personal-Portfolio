@@ -13,7 +13,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     DevDateDesc:
       'Developed Developer Connect, a MERN stack web app enabling developers to network, send/reject connection requests, and collaborate seamlessly.',
     DevDateGithub: 'https://github.com/nitin-04/DevDate-web',
-    DevDateWebsite: '',
+    DevDateWebsite: 'https://devdatee.vercel.app/',
 
     AstroDesc:
       'Developed a dynamic astrology platform that processes user birth data to compute accurate planetary positions and render  Kundli reports and Lagna charts in real-time..',
