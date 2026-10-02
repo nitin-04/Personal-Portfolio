@@ -43,25 +43,54 @@
   margin: 20px 0px;
 }
 
+.projectActions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
 .projectbtn {
-  font-size: 20px;
+  font-size: 14px;
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 40%;
-  margin: 25px 3% 0;
-  border-radius: 5px;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 6px;
   background-color: var(--first-color);
-  color: #E7E7E7;
-  height: 30px;
+  color: #ffffff;
+  min-width: 100px;
+  height: 34px;
   cursor: pointer;
   font-family: var(--body-font);
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
 }
 
 .projectbtn:hover {
-  background-color: var(--first-color);
-  color: var(--text-white);
-  color: black;
+  background-color: #0b4b70;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.projectTag {
+  font-size: 11px;
+  background-color: rgba(15, 98, 146, 0.15);
+  color: #8bc3ff;
+  border: 1px solid rgba(15, 98, 146, 0.35);
+  padding: 2px 8px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -146,4 +175,35 @@
   .projectbtn {
     font-size: 17px;
   }
+}
+
+/* Project Filter Tabs */
+.project__filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1.5rem auto 2rem;
+  max-width: 90%;
+}
+
+.filter__btn {
+  padding: 8px 20px;
+  border-radius: 24px;
+  border: 1px solid var(--first-color);
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.filter__btn:hover,
+.filter__btn.active {
+  background-color: var(--first-color);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 98, 146, 0.4);
 }

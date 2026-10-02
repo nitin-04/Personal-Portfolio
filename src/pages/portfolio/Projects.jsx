@@ -1,20 +1,24 @@
+import { useState } from 'react';
 import ProjectBox from '../../pages/portfolio/ProtfolioBox';
 import './portfolio.css';
-import annadata from '../../assets/annadata.png';
-import astro from '../../assets/astro.png';
-import bgChanger from '../../assets/bg_changer.png';
-import bmi from '../../assets/bmi.png';
-import colorswitch from '../../assets/colorswitch.png';
-import comingsoon from '../../assets/comingsoon.png';
-import rps from '../../assets/rps.png';
-import snakegame from '../../assets/snakegame.png';
-import ttt from '../../assets/ttt.png';
-import devdate from '../../assets/devdate.jpg';
-import share from '../../assets/share.png';
-import drive from '../../assets/drive.png';
-import pdfChecker from '../../assets/pdfChecker.png';
+import { PROJECTS } from '../../data/projects';
+
+const FILTER_CATEGORIES = ['All', 'Featured', 'Full Stack', 'Mini Projects'];
 
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const filteredProjects =
+    activeFilter === 'All'
+      ? PROJECTS
+      : activeFilter === 'Featured'
+      ? PROJECTS.filter((p) => p.featured)
+      : activeFilter === 'Full Stack'
+      ? PROJECTS.filter((p) => p.category === 'Full Stack')
+      : PROJECTS.filter(
+          (p) => p.category === 'Mini Projects' || p.category === 'Utilities'
+        );
+
   return (
     <section className="section">
       <h2 className="title">
@@ -22,25 +26,29 @@ const Projects = () => {
       </h2>
 
       <p className="para">
-        {` Here are some of the projects I've worked on. Some of them are still in development, others are completed.
-        Click on the project name for more information or to see the live version.
-        If you want to contribute to any of these projects, feel free to reach out to me.`}
+        {`Here are some of the full-stack applications, interactive tools, and engineering projects I've built. Use the filters below to explore by focus area, or check out the source code and live demos directly.`}
       </p>
 
+      <div className="project__filters" role="tablist" aria-label="Project categories">
+        {FILTER_CATEGORIES.map((category) => (
+          <button
+            key={category}
+            role="tab"
+            aria-selected={activeFilter === category}
+            className={`filter__btn ${
+              activeFilter === category ? 'active' : ''
+            }`}
+            onClick={() => setActiveFilter(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       <div className="project">
-        <ProjectBox projectPhoto={annadata} projectName="Annadata" />
-        <ProjectBox projectPhoto={devdate} projectName="DevDate" />
-        <ProjectBox projectPhoto={astro} projectName="Astro" />
-        <ProjectBox projectPhoto={drive} projectName="Drive" />
-        <ProjectBox projectPhoto={share} projectName="ContentShare" />
-        <ProjectBox projectPhoto={snakegame} projectName="SnakeGame" />
-        <ProjectBox projectPhoto={pdfChecker} projectName="PdfChecker" />
-        <ProjectBox projectPhoto={bmi} projectName="BMI" />
-        <ProjectBox projectPhoto={ttt} projectName="TicTacToe" />
-        <ProjectBox projectPhoto={bgChanger} projectName="BgChanger" />
-        <ProjectBox projectPhoto={colorswitch} projectName="ColorSwitch" />
-        <ProjectBox projectPhoto={rps} projectName="RockPaperScissor" />
-        <ProjectBox projectPhoto={comingsoon} projectName="Comingsoon" />
+        {filteredProjects.map((project) => (
+          <ProjectBox key={project.id} project={project} />
+        ))}
       </div>
     </section>
   );

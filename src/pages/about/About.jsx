@@ -3,67 +3,10 @@ import Stats from '../../components/Stats';
 import ResumeItem from '../../components/ResumeItem';
 import './about.css';
 import Resume from '../../components/Resume';
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import { SKILLS_LIST } from '../../data/skills';
+import { TIMELINE_DATA } from '../../data/timeline';
 
 const About = () => {
-  const resume = [
-    {
-      id: 1,
-      category: 'education',
-      icon: <FaBriefcase />,
-      year: 'December 2025 - May 2026',
-      title: 'Ablespace <span> Full Stack Developer </span>',
-      desc: 'Remote - USA ',
-    },
-    {
-      id: 2,
-      category: 'education',
-      icon: <FaBriefcase />,
-      year: 'August 2025 - December 2025',
-      title: 'KTP InfraTech Pvt Ltd <span> Software Engineer Intern </span>',
-      desc: 'Sector 49, Gurgaon ',
-    },
-    {
-      id: 3,
-      category: 'education',
-      icon: <FaBriefcase />,
-      year: 'Feb 2025 - August 2025',
-      title: 'YUP Solutions Pvt Ltd <span> Full Stack Developer Intern </span>',
-      desc: 'Remote - Mississauga, Canada ',
-    },
-    {
-      id: 4,
-      category: 'education',
-      icon: <FaGraduationCap />,
-      year: '2023-2025',
-      title: 'Master Degree <span> Master Of Computer Applications </span>',
-      desc: 'Gautam Buddha University, Greater Noida',
-    },
-
-    {
-      id: 5,
-      icon: <FaGraduationCap />,
-      year: '2019-2022',
-      title: 'Bachelor Degree <span> Bachelor of Science </span>',
-      desc: 'Hemvati Nandan Bahuguna Garhwal University,  Srinagar Garhwal, Uttarakhand',
-    },
-
-    {
-      id: 6,
-      icon: <FaGraduationCap />,
-      year: '2018',
-      title: 'Intermediate',
-      desc: 'Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand',
-    },
-    {
-      id: 7,
-      icon: <FaGraduationCap />,
-      year: '2016',
-      title: 'High School',
-      desc: 'Shri Guru Ram Rai Public School, Srinagar Garhwal, Uttarakhand',
-    },
-  ];
-
   return (
     <main className="section container">
       <section className="about">
@@ -78,52 +21,27 @@ const About = () => {
             </h3>
 
             <p className="about__para">
-              {`I recently completed my tenure as a `}
-              <span>Full Stack Developer</span>
-              {` at `}
+              {`I am a Full Stack Developer with 1.5+ years of experience engineering scalable web applications. Previously at `}
               <span>AbleSpace</span>
-              {`, where I focused on architecting robust backend systems and highly responsive frontend interfaces. I hold a `}
-              <span>{`Master's degree`}</span>
-              {` in `}
-              <span>Computer Applications</span>
+              {`, I focused on architecting robust backend microservices with NestJS and Node.js, optimizing MongoDB data layers, and creating reactive interfaces in Next.js and React. Prior to that, I engineered full-stack solutions and AI/RAG knowledge-retrieval workflows at `}
+              <span>KTP InfraTech</span>
+              {` and `}
+              <span>YUP Solutions</span>
+              {`.`}
+              <br />
+              <br />
+              {`I hold a `}
+              <span>{`Master's degree in Computer Applications (MCA)`}</span>
               {` with a specialization in `}
               <span>Data Science</span>
-              {`, which provided a strong foundation in both development and analytics. Prior to that, I earned a `}
-              <span>{`Bachelor's degree`}</span>
-              {` in `}
-              <span>Mathematics</span>
-              {`, helping me develop strong `}
-              <span>problem-solving</span>
-              {` and `}
-              <span>logical thinking</span>
-              {` skills.`}
+              {` and a `}
+              <span>{`Bachelor's degree in Mathematics`}</span>
+              {`, which provides a rigorous foundation in algorithms, system architecture, and analytical problem-solving.`}
               <br />
               <br />
-
-              {`Throughout my journey, I have gained hands-on experience with technologies such as `}
-              <span>NextJS</span>
-              {`, `}
-              <span>ReactJS</span>
-              {`, `}
-              <span>JavaScript</span>
-              {`, and various other `}
-              <span>tools</span>
-              {`.`}
-              {` I enjoy building original `}
-              <span>projects</span>
-              {` with engaging `}
-              <span>designs</span>
-              {` that solve real-world problems.`}
-              <br />
-              <br />
-
               {`Beyond coding, I enjoy `}
-              <span>traveling</span>
-              {`, `}
               <span>playing chess</span>
-              {`, `}
-              <span>exploring mountainous areas</span>
-              {`, and having conversations that bring in diverse perspectives.`}
+              {`, exploring mountainous trails, and collaborating on high-impact technology products.`}
             </p>
 
             <Resume />
@@ -138,31 +56,13 @@ const About = () => {
       <div className="separator"></div>
 
       <section className="skills">
-        <h1 className="section__subtitle subtitle__center">
-          {' '}
-          My <span>Skills</span>
-        </h1>
-        <div className="skills__container ">
-          <Skills skill="Nextjs" />
-          <Skills skill="React" />
-          <Skills skill="Node" />
-          <Skills skill="Express" />
-          <Skills skill="MongoDb" />
-          <Skills skill="MySQL" />
-          <Skills skill="Git" />
-          <Skills skill="Github" />
-          <Skills skill="Javascript" />
-          <Skills skill="Typescript" />
-          <Skills skill="C++" />
-          <Skills skill="Python" />
-          <Skills skill="Excel" />
-          <Skills skill="HTML" />
-          <Skills skill="Tailwind" />
-          <Skills skill="CSS" />
-          <Skills skill="Vercel" />
-          <Skills skill="Npm" />
-          <Skills skill="Postman" />
-          <Skills skill="Bootstrap" />
+        <h2 className="section__subtitle subtitle__center">
+          My <span>Technical Skills</span>
+        </h2>
+        <div className="skills__container">
+          {SKILLS_LIST.map((skill) => (
+            <Skills key={skill} skill={skill} />
+          ))}
         </div>
       </section>
 
@@ -170,14 +70,14 @@ const About = () => {
 
       <section className="resume">
         <h3 className="section__subtitle subtitle__center">
-          My <span>TimeLine</span>
+          Career <span>Timeline</span>
         </h3>
 
         <div className="resume__container grid">
           <div className="resume__data">
-            {resume.map((val) => {
-              return <ResumeItem key={val.id} {...val} />;
-            })}
+            {TIMELINE_DATA.map((val) => (
+              <ResumeItem key={val.id} {...val} />
+            ))}
           </div>
         </div>
       </section>

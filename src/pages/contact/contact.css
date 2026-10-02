@@ -263,3 +263,27 @@
 
   
 }
+
+/* Form Validation and Info Link Styles */
+.form__control.has-error {
+  border: 1px solid #ff6b6b !important;
+  background-color: rgba(255, 107, 107, 0.08) !important;
+}
+
+.field__error {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin-top: 6px;
+  margin-left: 12px;
+  display: block;
+}
+
+.info__desc a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.info__desc a:hover {
+  color: var(--first-color);
+}

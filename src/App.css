@@ -5,12 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: none;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
 
 :root {
-  --first-color:  #0F6292;
+  --first-color: #0f6292;
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 100%);
   --body-color: hsl(0, 0%, 0%);
@@ -40,8 +44,6 @@
   --weight-700: 700;
   --weight-800: 800;
 }
-
-
 
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -80,15 +82,11 @@ h3 {
 
 ul {
   list-style: none;
-
 }
 
 a {
   text-decoration: none;
-
 }
-
-
 
 button,
 input,
@@ -101,12 +99,11 @@ textarea {
 img {
   max-width: 100%;
   transition: all 0.4s ease-in-out;
-  
 }
-.home__img{
+.home__img {
   filter: grayscale(100%);
 }
-.home__img:hover{
+.home__img:hover {
   cursor: pointer;
   filter: grayscale(0%);
 }
@@ -135,10 +132,8 @@ img {
   margin: 0 2% 3%;
 }
 
-
-span{
+span {
   color: var(--first-color);
-
 }
 
 .button {
@@ -152,14 +147,13 @@ span{
   font-weight: var(--weight-500);
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 0.25s ease-in-out;
-  
 }
-
 
 .button:hover {
   color: var(--text-white);
-
 }
 
 .button::before {
@@ -172,7 +166,7 @@ span{
   transition: all 0.3s ease-out;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: translateX(0);
 }
 
@@ -189,7 +183,6 @@ span{
   line-height: 60px;
 }
 
-
 .loader-container {
   display: flex;
   justify-content: center;
@@ -199,7 +192,12 @@ span{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a transparent background */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: adds a transparent background */
   z-index: 1000; /* Ensures it appears above other content */
 }
 
@@ -225,8 +223,6 @@ span{
   z-index: 9998;
 }
 
-
-
 /* Mobile Screens (max-width: 600px) */
 @media screen and (max-width: 600px) {
   .container {
@@ -241,10 +237,8 @@ span{
     padding: 4% 10%;
     font-size: var(--tiny-font-size);
     height: 50px;
-  
-    
   }
-  .cv{
+  .cv {
     height: auto;
     margin-right: 25px;
   }
@@ -306,7 +300,7 @@ span{
   .button {
     padding: 2.6% 5%;
   }
-  .cv{
+  .cv {
     margin-right: 34px;
   }
 

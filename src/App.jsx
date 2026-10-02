@@ -1,22 +1,25 @@
+import { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RingLoader from "react-spinners/RingLoader";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/home/Home";
-import Projects from "./pages/portfolio/Projects";
-import Contact from "./pages/contact/Contact";
-import About from "./pages/about/About";
-import { useEffect, useState } from "react";
-import RingLoader from "react-spinners/RingLoader";
 import Cursor from "./components/Cursor";
-import Experience from "./pages/experience/Experience";
+
+const Home = lazy(() => import("./pages/home/Home"));
+const About = lazy(() => import("./pages/about/About"));
+const Projects = lazy(() => import("./pages/portfolio/Projects"));
+const Experience = lazy(() => import("./pages/experience/Experience"));
+const Contact = lazy(() => import("./pages/contact/Contact"));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2500);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -29,13 +32,21 @@ function App() {
       ) : (
         <BrowserRouter>
           <Navbar />
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="portfolio" element={<Projects />} />
-            <Route path="experience" element={<Experience />} />
-            <Route path="contact" element={<Contact />} />
-          </Routes>
+          <Suspense
+            fallback={
+              <div className="loader-container">
+                <RingLoader color="#0f5792" loading={true} size={120} />
+              </div>
+            }
+          >
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="portfolio" element={<Projects />} />
+              <Route path="experience" element={<Experience />} />
+              <Route path="contact" element={<Contact />} />
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       )}
     </>

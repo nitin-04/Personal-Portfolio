@@ -1,42 +1,40 @@
+import { memo } from 'react';
 import parse from 'html-react-parser';
 
+const STATS_DATA = [
+  {
+    id: 'experience',
+    no: '1.5+',
+    title: 'Years Full Stack<br />Experience',
+  },
+  {
+    id: 'roles',
+    no: '3+',
+    title: 'Industry Tech<br />Roles',
+  },
+  {
+    id: 'apis',
+    no: '15+',
+    title: 'Production APIs<br />& Services',
+  },
+  {
+    id: 'projects',
+    no: '10+',
+    title: 'Web Apps<br />Shipped',
+  },
+];
+
 const Stats = () => {
-  const stats = [
-    {
-      id: 1,
-      no: '10+',
-      title: 'Completed  <br /> Projects',
-    },
-
-    {
-      id: 2,
-      no: '45+',
-      title: 'LeetCode <br /> Questions',
-    },
-    {
-      id: 3,
-      no: '12+',
-      title: 'Hours <br /> Learning',
-    },
-    {
-      id: 4,
-      no: '100+',
-      title: 'Resolved <br /> Bugs',
-    },
-  ];
-
   return (
     <>
-      {stats.map(({ no, title }, index) => {
-        return (
-          <div className="stats__box" key={index}>
-            <h3 className="stats__no">{no}</h3>
-            <p className="stats__title">{parse(title)}</p>
-          </div>
-        );
-      })}
+      {STATS_DATA.map(({ id, no, title }) => (
+        <div className="stats__box" key={id}>
+          <h3 className="stats__no">{no}</h3>
+          <p className="stats__title">{parse(title)}</p>
+        </div>
+      ))}
     </>
   );
 };
 
-export default Stats;
+export default memo(Stats);
