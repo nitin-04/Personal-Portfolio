@@ -137,33 +137,48 @@ span {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   color: var(--title-color);
   border: 2px solid var(--first-color);
-  padding: 3% 12% 2% 3%;
+  padding: 12px 64px 12px 28px;
   border-radius: 50px;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
-  font-weight: var(--weight-500);
+  font-weight: var(--weight-600);
   position: relative;
   overflow: hidden;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  z-index: 1;
+}
+
+.button .cv,
+.cv {
+  display: inline-block;
+  color: #ffffff !important;
+  position: relative;
+  z-index: 2;
+  transition: color 0.25s ease-in-out;
+}
+
+.button:hover .cv {
+  color: #ffffff !important;
 }
 
 .button:hover {
-  color: var(--text-white);
+  color: #ffffff !important;
 }
 
 .button::before {
   content: '';
   position: absolute;
   inset: 0;
-  transform: translate(-100%);
+  transform: translateX(-100%);
   background-color: var(--first-color);
-  z-index: -1;
-  transition: all 0.3s ease-out;
+  z-index: 1;
+  transition: transform 0.3s ease-out;
 }
 
 .button:hover::before {
@@ -174,13 +189,20 @@ span {
   background-color: var(--first-color);
   position: absolute;
   inset-block: -2px;
-  right: 0;
-  width: 60px;
+  right: -2px;
+  width: 55px;
   border-radius: 50%;
   color: var(--text-white);
-  font-size: 150%;
-  text-align: center;
-  line-height: 60px;
+  font-size: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.25s ease-in-out;
+}
+
+.button:hover .button__icon {
+  color: #ffffff;
 }
 
 .loader-container {

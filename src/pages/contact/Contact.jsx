@@ -220,9 +220,9 @@ const Contact = () => {
             disabled={isSubmitting}
             aria-busy={isSubmitting}
           >
-            <div className="msg">
+            <span className="msg">
               {isSubmitting ? 'Sending...' : 'Send Message'}
-            </div>
+            </span>
             <span className="send_button__icon">
               <FiSend />
             </span>

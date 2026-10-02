@@ -24,10 +24,6 @@
   font-size: var(--h1-font-size);
   line-height: 1.24;
   padding-left: 10px;
-  hyphens: manual;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .home__description {
