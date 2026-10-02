@@ -331,3 +331,16 @@ span {
     line-height: 60px;
   }
 }
+
+/* Mobile & Tablet Safe Area Bottom Clearance (Prevents bottom dock overlap) */
+@media screen and (max-width: 768px) {
+  .section,
+  .contact,
+  .about,
+  .experience,
+  .project,
+  .home,
+  main {
+    padding-bottom: 120px !important;
+  }
+}

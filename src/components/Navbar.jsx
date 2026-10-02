@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import {
@@ -43,38 +43,24 @@ const NAV_LINKS = [
 ];
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <nav className="nav" aria-label="Main Navigation">
-      <div className={`${showMenu ? "nav__menu show-menu" : "nav__menu"}`}>
-        <ul className="nav__list">
-          {NAV_LINKS.map(({ id, name, icon, path }) => (
-            <li className="nav__item" key={id}>
-              <NavLink
-                to={path}
-                className={({ isActive }) =>
-                  isActive ? "nav__link active-nav" : "nav__link"
-                }
-                onClick={() => setShowMenu(false)}
-              >
-                {icon}
-                <span className="nav__name">{name}</span>
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <button
-        type="button"
-        aria-label="Toggle navigation menu"
-        aria-expanded={showMenu}
-        className={`${
-          showMenu ? "nav__toggle animate-toggle" : "nav__toggle"
-        }`}
-        onClick={() => setShowMenu((prev) => !prev)}
-      ></button>
+      <ul className="nav__list">
+        {NAV_LINKS.map(({ id, name, icon, path }) => (
+          <li className="nav__item" key={id}>
+            <NavLink
+              to={path}
+              className={({ isActive }) =>
+                isActive ? "nav__link active-nav" : "nav__link"
+              }
+              aria-label={name}
+            >
+              {icon}
+              <span className="nav__name">{name}</span>
+            </NavLink>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };
